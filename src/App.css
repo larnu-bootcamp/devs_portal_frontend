@@ -97,6 +97,8 @@
 .login-container__top, .login-container__bottom {
   display: flex;
   height: 30vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-container__center {
@@ -111,4 +113,8 @@
 
 .login-container__center__left, .login-container__center__right {
   width: 25vw;
+}
+
+.login__logo {
+  height: 7rem;
 }

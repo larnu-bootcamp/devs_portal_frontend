@@ -6,7 +6,9 @@ function Login() {
     <div className="Login">
       <div className="main">
         <div className="login-container background-image-login">
-          <div className="login-container__top"></div>
+          <div className="login-container__top">
+            <img className='login__logo' src="src/assets/larnu_logo.png" alt="" />
+          </div>
           <div className="login-container__center">
             <div className="login-container__center__left"></div>
             <div className="login-container__card">
