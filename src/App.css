@@ -66,23 +66,23 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-content: center;
+  align-content: space-around;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   gap: 1rem;
-  padding-left: 2rem;
 }
 
 .login-title {
   display: flex; 
-  padding-left: 2rem;
+  padding-left: calc(10% - 10px);
+  width: 80%;
 }
 
 .login-user, .login-password {
   background-color: var(--gray--one);
   color: var(--gray--two);
   border: var(--gray--one);
-  width: 10rem;
+  width: 80%;
   height: 2rem;
   padding: 0.5rem;
 }
