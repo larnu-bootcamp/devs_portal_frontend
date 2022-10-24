@@ -1,5 +1,5 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
   /* padding: 2rem; */
   text-align: center;
@@ -69,7 +69,7 @@
   align-content: space-around;
   justify-content: center;
   align-items: stretch;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .login-title {
@@ -103,9 +103,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-content: center;
+  align-content: flex-end;
   justify-content: center;
   align-items: center;
+  height: 40vh;
 }
 
 .login-container__center__left, .login-container__center__right {
