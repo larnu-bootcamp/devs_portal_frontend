@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "fibra-one-bold";
+  src: url("../public/fonts/Fibra-One-Bold.otf");
+}
+@font-face {
+  font-family: "fibra-one-regular";
+  src: url("../public/fonts/Fibra-One-regular.otf");
+}
