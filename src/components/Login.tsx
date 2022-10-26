@@ -1,6 +1,34 @@
 import '../App.css'
+import { useRef, useState, useEffect } from 'react';
 
 function Login() {
+
+  const userRef = useRef();
+  const errRef = useRef();
+
+  const [user, setUser] = useState('');
+  const [pwd, setPwd] = useState('');
+  const [errMsg, setErrMsg] = useState('');
+  const [successMsg, setSuccess] = useState(false);
+
+  // focus on input
+  useEffect(() => {
+    userRef.current.focus();
+  }, [])
+
+  // clear inputs after error message
+  useEffect(() => {
+    setErrMsg('');
+  }, [user, pwd])
+
+  const handleSubmit = async (e) => {
+    // avoid reloading the page
+    e.preventDefault();
+    console.log(user, pwd);
+    setUser('');
+    setPwd('');
+    setSuccess(true);
+  }
 
   return (
     <div className="Login">
@@ -12,10 +40,33 @@ function Login() {
           <div className="login-container__center">
             <div className="login-container__center__left"></div>
             <div className="login-container__card">
+              <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
               <h3 className='login-title'>Hola, terrícola</h3>
-              <form action="post" className='login-form'>
-                <input type="text" name='login-user' className='login-user' placeholder='Usuario...' required />
-                <input type="password" name="login-password" className='login-password' placeholder='Contraseña...' required />
+              <form onSubmit={handleSubmit} className='login-form'>
+                <label htmlFor="login-user">Usuario:</label>
+                <input
+                  type="text"
+                  name='login-user'
+                  id='login-user'
+                  ref={userRef}
+                  className='login-user'
+                  placeholder='Usuario...'
+                  autoComplete='off'
+                  onChange={(e) => setUser(e.target.value)}
+                  value={user}
+                  required
+                />
+                <label htmlFor="login-password">Password:</label>
+                <input
+                  type="password"
+                  name='login-password'
+                  id='login-password'
+                  className='login-password'
+                  placeholder='Contraseña...'
+                  onChange={(e) => setPwd(e.target.value)}
+                  value={pwd}
+                  required
+                />
                 <button type='submit'>Ingresar</button>
               </form>
             </div>
