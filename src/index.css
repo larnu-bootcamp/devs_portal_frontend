@@ -10,3 +10,11 @@
   font-family: "fibra-one-regular";
   src: url("../public/fonts/Fibra-One-regular.otf");
 }
+
+.max-h-100 {
+  height: calc(100vh - 80px);
+}
+.cards {
+  min-width: 320px;
+  max-width: 320px;
+}

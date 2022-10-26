@@ -12,6 +12,7 @@ module.exports = {
         fondoMorado: "#F0F5FD",
         colorTitulo: "#3E416D",
         colorSubTitulo: "#9798A9",
+        colorBotonRe: "#61D66B",
       },
     },
   },
