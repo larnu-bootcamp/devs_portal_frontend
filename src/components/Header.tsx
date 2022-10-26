@@ -40,7 +40,7 @@ const Header = () => {
             <li>
               <a
                 className="font-fibraBold  text-colorTitulo text-xl"
-                href="https://es.larnu.com/security"
+                href="https://es.larnu.com/bootcamp"
                 target="_blank"
               >
                 Bootcamp
@@ -49,7 +49,7 @@ const Header = () => {
             <li>
               <a
                 className="font-fibraBold  text-colorTitulo text-xl"
-                href="https://es.larnu.com/gdpr"
+                href="https://es.larnu.com/blog"
                 target="_blank"
               >
                 Blog
@@ -58,7 +58,7 @@ const Header = () => {
             <li>
               <a
                 className="font-fibraBold  text-colorTitulo text-xl"
-                href="https://es.larnu.com/terms"
+                href="#"
                 target="_blank"
               >
                 Egresados
@@ -67,7 +67,7 @@ const Header = () => {
             <li>
               <a
                 className="font-fibraBold  text-colorTitulo text-xl"
-                href="https://es.larnu.com/privacy-policy"
+                href="#"
                 target="_blank"
               >
                 Misión
@@ -95,10 +95,26 @@ const Header = () => {
           className={`font-fibraBold px-4 py-6 rounded-b-2xl bg-white absolute transform transition ease-in duration-300  ${traslateP} w-full`}
         >
           <ul className="flex flex-col gap-y-5 mb-6 text-colorTitulo">
-            <li>BootCamp</li>
-            <li>Blog</li>
-            <li>Egresados</li>
-            <li>Misión</li>
+            <li>
+              <a href="https://es.larnu.com/bootcamp" target="_blank">
+                BootCamp
+              </a>
+            </li>
+            <li>
+              <a href="https://es.larnu.com/blog" target="_blank">
+                Blog
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                Egresados
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                Misión
+              </a>
+            </li>
           </ul>
           <button className="bg-transparent border-2 border-colorBotonRe hover:bg-colorBotonRe hover:text-white text-colorBotonRe w-full rounded-full py-1">
             Registrate
