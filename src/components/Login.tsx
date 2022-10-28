@@ -1,8 +1,10 @@
 import '../App.css'
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect, useContext } from 'react';
+import AuthContext from "../context/AuthProvider";
 
 function Login() {
 
+  const { setAuth } = useContext(AuthContext);
   const userRef = useRef();
   const errRef = useRef();
 
@@ -31,6 +33,7 @@ function Login() {
   }
 
   return (
+
     <div className="Login">
       <div className="main">
         <div className="login-container background-image-login">
@@ -43,7 +46,6 @@ function Login() {
               <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
               <h3 className='login-title'>Hola, terrícola</h3>
               <form onSubmit={handleSubmit} className='login-form'>
-                <label htmlFor="login-user">Usuario:</label>
                 <input
                   type="text"
                   name='login-user'
@@ -56,7 +58,6 @@ function Login() {
                   value={user}
                   required
                 />
-                <label htmlFor="login-password">Password:</label>
                 <input
                   type="password"
                   name='login-password'
@@ -67,7 +68,7 @@ function Login() {
                   value={pwd}
                   required
                 />
-                <button type='submit'>Ingresar</button>
+                <button className='login-button' type='submit'>Ingresar</button>
               </form>
             </div>
             <div className="login-container__center__right"></div>

@@ -5,6 +5,8 @@
   --gray--one: #F4FAFE;
   --gray--two: #9798A9;
   --gray--three: #3E416D;
+  --green--one: #61D66B;
+  --green-two: #3DAD47;
 }
 
 .logo {
@@ -83,6 +85,7 @@
   width: 80%;
   height: 2rem;
   padding: 0.5rem;
+  border-radius: 6px;
 }
 
 .login-user:valid, .login-password:valid {
@@ -90,6 +93,7 @@
   color: var(--gray--three);
   border: var(--gray--three);
   padding: 0.5rem;
+  border-radius: 6px;
 }
 
 .login-container__top, .login-container__bottom {
@@ -115,4 +119,10 @@
 
 .login__logo {
   height: 6rem;
+}
+
+.login-button {
+  background-color: var(--green--one);
+  border-bottom: 4px inset var(--green-two);
+  color: var(--white);
 }
