@@ -111,10 +111,20 @@
   justify-content: center;
   align-items: center;
   height: 40vh;
+  
 }
 
 .login-container__center__left, .login-container__center__right {
   width: 25vw;
+}
+
+.login-container__center__right {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-end;
+  
 }
 
 .login__logo {
@@ -125,4 +135,9 @@
   background-color: var(--green--one);
   border-bottom: 4px inset var(--green-two);
   color: var(--white);
+}
+
+.waving-alien {
+  height: 25rem;
+  margin-right: -5vw;
 }

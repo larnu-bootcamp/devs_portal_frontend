@@ -1,10 +1,13 @@
+import React, { ReactNode } from "react";
 import { createContext, useState } from "react";
 
 const AuthContext = createContext({});
 
-type children = any;
+interface AuthProvider {
+  children?: ReactNode;
+}
 
-export const AuthProvider = ({ children }) => {
+export const AuthProvider = ({ children }: AuthProvider) => {
   const [auth, setAuth] = useState({});
 
   return (

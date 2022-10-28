@@ -71,7 +71,9 @@ function Login() {
                 <button className='login-button' type='submit'>Ingresar</button>
               </form>
             </div>
-            <div className="login-container__center__right"></div>
+            <div className="login-container__center__right">
+              <img className='waving-alien' src="src/assets/waving-alien.svg" alt="waving alien" />
+            </div>
           </div>
           <div className="login-container__bottom"></div>
         </div>
