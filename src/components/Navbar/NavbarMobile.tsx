@@ -20,7 +20,7 @@ return (
       <div className='navbar--mobile__logo'>
         <img src= {Logo} alt="Logo LarnU" />
       </div>
-      <div className='navbar--mobile__iconMenu'>
+      <div className='navbar--mobile__iconMenu'data-testid="iconMobile">
         <button onClick={handleToggle}>{navbarOpen ? (<img src={IconClose}></img>):(<img src={IconMenu}></img>)}</button>
       </div>
     </div>
