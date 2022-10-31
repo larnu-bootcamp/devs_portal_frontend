@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'Fibra One';
+  src: url('../../assets/fonts/FibraOneAltRegular.otf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Fibra One';
+  src: url('../../assets/fonts/FibraOneBold.otf');
+  font-style: bold;
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 3vh 8vw;
+}
+
+.navbar__logo {
+  width: 15%;
+}
+
+.navbar__logo img {
+  width: 140px;
+}
+
+.navbar__links {
+  width: 60%;
+  padding-left: 15px;
+}
+
+.navbar__links a {
+  padding: 5px 30px;
+  font-family: 'Fibra One';
+  font-weight: bold;
+  text-decoration: none;
+  color: #3E416D;
+  font-size: 16px;
+}
+.navbar__links a:hover {
+  color:#1E96FF;
+}
+
+.navbar__button {
+  display: flex;
+  width: 25%;
+  justify-content: flex-end;
+}
+
+.navbar__button button {
+  cursor: pointer;
+  background-color: transparent;
+  font-family: 'Fibra One';
+  font-size: 16px;
+  font-weight: bold;
+  color: #61d66b;
+  padding: 3px 12px;
+  border-radius: 100px;
+  border: 1px solid #61d66b ;
+}
+
+
+/*/////Mobile Medias /////*/
+
+
+@media (max-width: 950px) { 
+  
+  .navbar {
+    display: none;
+  }
+  
+}
