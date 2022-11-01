@@ -34,7 +34,7 @@ describe ('navbarMobile',() => {
     render(<NavbarMobile/>)
     screen.getAllByRole('button')
     fireEvent.click(screen.getByTestId('iconMobile'))
-    const enlaces:string[] = ['Bootcamp','Blog','Egresados','Mision']
+    const enlaces:string[] = ['Bootcamp','Blog','Egresados','Misión']
     enlaces.forEach(enlace => {
       screen.findAllByText(enlace)
     })

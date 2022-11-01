@@ -16,7 +16,7 @@ const Navbar = () => {
         <a href="#">Bootcamp</a>
         <a href="#">Blog</a>
         <a href="#">Egresados</a>
-        <a href="#">Mision</a>
+        <a href="#">Misión</a>
       </div>
       <div className='navbar__button'>
         <button>

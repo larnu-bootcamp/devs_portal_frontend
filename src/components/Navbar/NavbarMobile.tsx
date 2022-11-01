@@ -28,7 +28,7 @@ return (
       <a href="#">Bootcamp</a>
       <a href="#">Blog</a>
       <a href="#">Egresados</a>
-      <a href="#">Mision</a>
+      <a href="#">Misión</a>
       <button>Registrarse</button>
     </div>
   </div>

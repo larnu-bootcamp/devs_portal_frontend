@@ -32,9 +32,9 @@ describe('Navbar', () => {
     screen.findAllByText('Logo LarnU')
   })
   
-  it('Deberia existir los enlaces Bootcamp, Blog, Egresados, Mision', ():void => {
+  it('Deberia existir los enlaces Bootcamp, Blog, Egresados, Misión', ():void => {
     render(<Navbar/>)
-    const enlaces:string[] = ['Bootcamp','Blog','Egresados','Mision']
+    const enlaces:string[] = ['Bootcamp','Blog','Egresados','Misión']
     enlaces.forEach(enlace => {
       screen.findAllByText(enlace)
     })
