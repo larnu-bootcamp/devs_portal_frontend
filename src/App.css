@@ -1,8 +1,12 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  --white: #ffffff;
+  --gray--one: #F4FAFE;
+  --gray--two: #9798A9;
+  --gray--three: #3E416D;
+  --green--one: #61D66B;
+  --green-two: #3DAD47;
 }
 
 .logo {
@@ -38,4 +42,102 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.background-image-login {
+  background-image: url('assets/login-background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.login-container__card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  width: 40vw;
+  height: calc(40vh - 20px);
+  border-radius:10px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.5rem;
+}
+
+.login-title {
+  display: flex; 
+  padding-left: calc(10% - 10px);
+  width: 80%;
+}
+
+.login-user, .login-password {
+  background-color: var(--gray--one);
+  color: var(--gray--two);
+  border: var(--gray--one);
+  width: 80%;
+  height: 2rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.login-user:valid, .login-password:valid {
+  background-color: var(--white);
+  color: var(--gray--three);
+  border: var(--gray--three);
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.login-container__top, .login-container__bottom {
+  display: flex;
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container__center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  
+}
+
+.login-container__center__left, .login-container__center__right {
+  width: 25vw;
+}
+
+.login-container__center__right {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-end;
+  
+}
+
+.login__logo {
+  height: 6rem;
+}
+
+.login-button {
+  background-color: var(--green--one);
+  border-bottom: 4px inset var(--green-two);
+  color: var(--white);
+}
+
+.waving-alien {
+  height: 25rem;
+  margin-right: -5vw;
 }
