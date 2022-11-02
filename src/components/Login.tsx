@@ -3,12 +3,12 @@ import { useRef, useState, useEffect, useContext } from 'react';
 import AuthContext from "../context/AuthProvider";
 
 import axios from '../api/axios'
-const LOGIN_URL = '/auth';
+const LOGIN_URL = 'www.larnu.com/desarrolladores/login';
 
 function Login() {
 
-  const { setAuth } = useContext(AuthContext);
-  const userRef = useRef();
+  const setAuth = useContext(AuthContext);
+  // const userRef = useRef();
   const errRef = useRef();
 
   const [user, setUser] = useState('');
@@ -17,9 +17,9 @@ function Login() {
   const [successMsg, setSuccess] = useState(false);
 
   // focus on input
-  useEffect(() => {
-    userRef.current.focus();
-  }, [])
+  // useEffect(() => {
+  //   userRef.current.focus();
+  // }, [])
 
   // clear inputs after error message
   useEffect(() => {
@@ -47,13 +47,13 @@ function Login() {
       setSuccess(true);
     } catch (error) {
       if (!error?.response) {
-        setErrMsg('No Server Response');
+        setErrMsg('No hay respuesta del servidor');
       } else if (errMsg.response?.status === 400) {
-        setErrMsg('Missing username or password');
-      } else if (errMsg.response?.status === 401) {
-        setErrMsg('Unauthorized');
+        setErrMsg('Error por validación');
+      } else if (errMsg.response?.status === 404) {
+        setErrMsg('Email o password no coinciden');
       } else {
-        setErrMsg('Login failed');
+        setErrMsg('El inicio de sesión falló');
       }
       errRef.current.focus();
     }
@@ -77,7 +77,7 @@ function Login() {
                   type="text"
                   name='login-user'
                   id='login-user'
-                  ref={userRef}
+                  // ref={userRef}
                   className='login-user'
                   placeholder='Usuario...'
                   autoComplete='off'
