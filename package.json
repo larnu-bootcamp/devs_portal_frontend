@@ -10,10 +10,12 @@
     "test": "vitest"
   },
   "dependencies": {
+    "happy-dom": "^7.6.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@testing-library/react": "^13.4.0",
     "@types/react": "^18.0.23",
     "@types/react-dom": "^18.0.7",
     "@typescript-eslint/eslint-plugin": "^5.40.1",
