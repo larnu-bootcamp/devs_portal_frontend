@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="container-footer_main__block">
           <div className="container-footer_main__block-first">
             <img className="container-footer_logo " src={Logo} alt="Larnu Logo" />
-            <p className="font-fibraRegular">
+            <p className="font-fibraRegular container-footer_main__block-first-p">
               All Rights Reserved © LARNU SPA 2021
             </p>
             <img
@@ -39,22 +39,22 @@ const Footer = () => {
               <li className="container-footer_main__block-second-title">Equipo</li>
               <li>
                 <a href="https://es.larnu.com/about-us" target="_blank">
-                Sobre LarnU
+                  Sobre LarnU
                 </a>
               </li>
               <li>
                 <a href="https://es.larnu.com/founders" target="_blank">
-                Fundadores
+                  Fundadores
                 </a>
               </li>
               <li>
                 <a href="https://es.larnu.com/careers" target="_blank">
-                Prensa
+                  Prensa
                 </a>
               </li>
               <li>
                 <a href="https://es.larnu.com/contact-us" target="_blank">
-                Contáctanos
+                  Contáctanos
                 </a>
               </li>
             </ul>

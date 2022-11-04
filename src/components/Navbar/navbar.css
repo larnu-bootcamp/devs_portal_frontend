@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Fibra One';
-  src: url('../../assets/fonts/FibraOneAltRegular.otf');
+  src: url('../../assets/fonts/Fibra-One-regular.otf');
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Fibra One';
-  src: url('../../assets/fonts/FibraOneBold.otf');
+  src: url('../../assets/fonts/Fibra-One-Bold.otf');
   font-style: bold;
   font-weight: bold;
 }
