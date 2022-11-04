@@ -8,18 +8,12 @@ const LOGIN_URL = 'www.larnu.com/desarrolladores/login';
 function Login() {
 
   const setAuth = useContext(AuthContext);
-  // const userRef = useRef();
   const errRef = useRef();
 
   const [user, setUser] = useState('');
   const [pwd, setPwd] = useState('');
   const [errMsg, setErrMsg] = useState('');
   const [successMsg, setSuccess] = useState(false);
-
-  // focus on input
-  // useEffect(() => {
-  //   userRef.current.focus();
-  // }, [])
 
   // clear inputs after error message
   useEffect(() => {
@@ -29,7 +23,6 @@ function Login() {
   const handleSubmit = async (e) => {
     // avoid reloading the page
     e.preventDefault();
-
     try {
       const response = await axios.post(LOGIN_URL,
         JSON.stringify({ user, pwd }),
@@ -77,7 +70,6 @@ function Login() {
                   type="text"
                   name='login-user'
                   id='login-user'
-                  // ref={userRef}
                   className='login-user'
                   placeholder='Usuario...'
                   autoComplete='off'
