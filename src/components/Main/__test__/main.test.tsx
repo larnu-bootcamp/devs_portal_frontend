@@ -12,4 +12,13 @@ describe('Main', () => {
     render(<Main />)
     screen.getByText('Encuentra el match perfecto de programadores para tu empresa')
   })
+  it('verificando parrafo', (): void => {
+    render(<Main />)
+    screen.getByText('Talento de Latinoamérica al mundo')
+  })
+  // test img
+  it('verificando que se ve la imagen', (): void => {
+    render(<Main />)
+    screen.getByAltText('img git ticket')
+  })
 })

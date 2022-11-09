@@ -1,16 +1,12 @@
+import axios from "axios";
+
 
 export const getUsersApi = async () => {
   try {
-    const url = '/src/components/StudentCard/api/students.json'
-    const response = await fetch(url, {
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      }
-    });
-    const data = await response.json();
-    console.log(data);
-    return data;
+    const url = 'https://api-rapida-test-production.up.railway.app/'
+    const response = await axios.get(url);
+
+    return response.data;
 
   } catch (error) {
     console.log(error);

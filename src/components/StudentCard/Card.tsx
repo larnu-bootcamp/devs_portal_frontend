@@ -44,7 +44,7 @@ const Card = () => {
 
   return (
     <div className='container-cards'>
-      {data.map((item: Student, index) => {
+      {data?.length > 0 ? data.map((item: Student, index) => {
         return (
           <div className='container-card__student' key={index}>
             <div className='container-card__student-perfil'>
@@ -93,7 +93,7 @@ const Card = () => {
             </div>
           </div>
         )
-      })}
+      }) : <h1>Cargando...</h1>}
     </div>
   )
 }

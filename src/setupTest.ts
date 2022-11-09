@@ -56,7 +56,7 @@ const userMock = [
 ]
 
 export const restHandlers = [
-  rest.get("/src/components/StudentCard/api/students.json", (req, res, ctx) => {
+  rest.get("https://api-rapida-test-production.up.railway.app/", (req, res, ctx) => {
     return res(ctx.status(200), ctx.json(userMock));
   })
 ];
