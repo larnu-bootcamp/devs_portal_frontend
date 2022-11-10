@@ -22,10 +22,14 @@
   flex-direction: column;
   gap: 10px;
 }
+.container-footer_main__block-first-p{
+  margin-bottom: 30px;
+}
 .container-footer_main__block-first__img{
   width: 100%;
   max-width: 240px;
   height: 33px;
+  margin-bottom: 50px;
 }
 .container-footer_main__block-second{
   display: flex;
@@ -57,6 +61,7 @@
 }
 .container-footer_logo{
   width: 144px;
+  margin-bottom: 30px;
 }
 
 
@@ -79,7 +84,7 @@
   margin-top: 40px;
 }
 .mb-10{
-  margin-bottom: 40px;
+  margin-bottom: 0px;
 }
 .mb-5{
   margin-bottom: 20px;
