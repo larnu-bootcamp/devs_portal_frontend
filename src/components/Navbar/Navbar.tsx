@@ -13,10 +13,10 @@ const Navbar = () => {
         <img src={Logo} alt="Logo LarnU" />
       </div>
       <div className='navbar__links'>
-        <a href="#">Bootcamp</a>
-        <a href="#">Blog</a>
-        <a href="#">Egresados</a>
-        <a href="#">Misión</a>
+        <a href="https://es.larnu.com/bootcamp">Bootcamp</a>
+        <a href="https://es.larnu.com/blog">Blog</a>
+        <a href="/">Egresados</a>
+        <a href="https://es.larnu.com/copia-de-home">Misión</a>
       </div>
       <div className='navbar__button'>
         <button>

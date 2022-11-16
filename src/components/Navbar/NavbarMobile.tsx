@@ -25,10 +25,10 @@ return (
       </div>
     </div>
     <div className={`menuNav ${navbarOpen ? "navbar--mobile__links" : "hidden"}`}>
-      <a href="#">Bootcamp</a>
-      <a href="#">Blog</a>
-      <a href="#">Egresados</a>
-      <a href="#">Misión</a>
+      <a href="https://es.larnu.com/bootcamp">Bootcamp</a>
+      <a href="https://es.larnu.com/blog">Blog</a>
+      <a href="/">Egresados</a>
+      <a href="https://es.larnu.com/copia-de-home">Misión</a>
       <button>Registrarse</button>
     </div>
   </div>
