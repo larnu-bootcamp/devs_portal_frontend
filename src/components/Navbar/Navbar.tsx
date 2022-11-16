@@ -10,7 +10,9 @@ const Navbar = () => {
     <>
     <div className='navbar'>
       <div className='navbar__logo'>
-        <img src={Logo} alt="Logo LarnU" />
+        <a href="https://es.larnu.com/">
+          <img src={Logo} alt="Logo LarnU" />
+        </a>
       </div>
       <div className='navbar__links'>
         <a href="https://es.larnu.com/bootcamp">Bootcamp</a>
